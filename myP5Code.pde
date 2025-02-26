@@ -4,13 +4,12 @@ setup = function() {
     background(255,255,255,0);
     
     drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
+    drawFish(300, 200, color(0,600,200));
+    drawShark(300, 95, color(200,400,2000));
+    
 };
 
-//🟢draw Function - will run on repeat
-draw = function(){
 
-};
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
@@ -19,11 +18,38 @@ mouseClicked = function(){
 
 //🟡drawFish Function - will run when called
 var drawFish = function(fishX, fishY, fishColor){
-  textSize(80);
+  textSize(20);
   fill(fishColor);
-  text("𓆝", fishX, fishY);
+  text("🐟🐟", fishX, fishY);
+};
+
+//🟡drawShark Function - will run when called
+var drawShark = function(fishX, fishY, fishColor){
+  textSize(200);
+  fill(fishColor);
+  text("🦈🦈", fishX, fishY);
+};
+
+//🟡drawOctopus Function - will run when called
+var drawShark = function(fishX, fishY, fishColor){
+  textSize(20);
+  fill(fishColor);
+  text("🦈", fishX, fishY);
+};
+
+//🟢drawMole Function -
+var drawMole = function(){
+    var moleX = 248;
+    var moleY = 185;
+
+
 };
 
 
+// draw-Function - will run on repeat
+draw = function(){
+drawFish(mouseX, mouseY)
+
+};
 
 
