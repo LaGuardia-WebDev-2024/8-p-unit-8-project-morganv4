@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
   font-family: water;
   src: url("https://cdn.glitch.global/97f7bbb3-2cd9-4b34-bbf2-d0a28c71f10b/Water%20Park.ttf?v=1738683075854");
 }
@@ -11,7 +11,7 @@ body {
   font-family: water;
 }
 
-h1{
+h1 {
   font-size: 30px;
 }
 
@@ -22,5 +22,14 @@ h1{
   border: 5px solid white;
 }
 
-
-
+body {
+  overflow: hidden;
+  height: 100vh;
+  touch-action: none;
+}
+div {
+  position: absolute;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+}
